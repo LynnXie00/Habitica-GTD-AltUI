@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>GTD Style Habitica</title>
+<script src="MyScript.js"></script> 
+<link rel="stylesheet" href="MyScyle.css">
+</head>
+<body>
+    <p> Enter your information here:</p>
+    <form>
+        <label>API Key:</label> 
+        <input  type="text" id="apiText"> 
+        <label>User ID:</label> 
+        <input  type="text" id="userID"> 
+        <input type="submit" id="apiSubmit" onclick="submitAPI()">        
+    </form>
+    <br>
+<div class="todo-container">
+    <div class="todo-column" id="todo-inbox">
+        <div class="column-title">Inbox</div>
+        <div class="task-container"></div>
+        <div class="new-task">
+            <input  type="text"><input type="submit" class="newTaskSubmit">
+        </div>
+    </div>  
+    <!-- inbox are the ones without dates -->
+    <div class="todo-column" id="todo-today">
+        <div class="column-title">Today</div>
+        <div class="task-container"></div>
+        <div class="new-task">
+            <input  type="text"><input type="submit" class="newTaskSubmit">
+        </div>
+    </div>
+    <div class="todo-column" id="todo-this week">
+        <div class="column-title">This week</div>
+        <div class="task-container"></div>
+        <div class="new-task">
+            <input  type="text"><input type="submit" class="newTaskSubmit">
+        </div>
+    </div>
+    <div class="todo-column" id="todo-future">
+        <div class="column-title">Future</div>
+        <div class="task-container"></div>
+        <div class="new-task">
+            <input  type="text"><input type="submit" class="newTaskSubmit">
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html> 

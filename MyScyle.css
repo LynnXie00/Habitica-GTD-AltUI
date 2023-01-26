@@ -1,0 +1,21 @@
+/* the style to vidualise elements */
+/* flex reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+div{
+    border: 1px solid black;
+    padding: 10px;
+    margin:10px; 
+}
+.todo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: stretch;
+    align-content:stretch;
+}
+.todo-column{
+    align-self:stretch;
+    flex-basis:25%; 
+}
+.column-title{
+    text-align: center;
+}
